@@ -2,7 +2,14 @@
 // При нажатии кнопки b-1 срабатывает функция f1. Функция должна прочитать содержимое i-1 и сравнить его с числом 4 (сравнение ==). Результат сравнения - true или false выведите в out-1.
 
 function f1(){
+    let val = +document.querySelector('.i-1').value;
+    let out = document.querySelector('.out-1');
 
+    if (val == 4){
+        out.innerHTML = true;
+    } else {
+        out.innerHTML = false;
+    }
 }
 
 document.querySelector('.b-1').onclick = f1;
@@ -11,11 +18,19 @@ document.querySelector('.b-1').onclick = f1;
 // Task 2
 // Даны две переменные a21 и a22. При нажатии кнопки b-2, запускается функция f2. Функция должна сравнить переменные с помощью if else и вывести в out-2 число, которое больше. Вариант равенства переменных не рассматриваем.
 
-let a21 = 45;
-let a22 = 32;
+let a21 = 0;
+let a22 = 122;
 
 function f2(){
+    let out = document.querySelector('.out-2'); 
 
+    if (a21 > a22) {
+        out.innerHTML = a21;
+    } else if (a21 < a22) {
+        out.innerHTML = a22;
+    } else {
+        out.innerHTML = '';
+    }
 }
 
 document.querySelector('.b-2').onclick = f2;
@@ -27,6 +42,18 @@ document.querySelector('.b-2').onclick = f2;
 
 function f3(){
 
+    let valOne = +document.querySelector('.i-31').value;
+    let valTwo = +document.querySelector('.i-32').value;
+    let out = document.querySelector('.out-3'); 
+
+    if (valOne > valTwo) {
+        out.innerHTML = valOne;
+    } else if (valOne < valTwo) {
+        out.innerHTML = valTwo;
+    } else {
+        out.innerHTML = '';
+    }
+
 }
 
 document.querySelector('.b-3').onclick = f3;
@@ -36,6 +63,16 @@ document.querySelector('.b-3').onclick = f3;
 
 function f4(){
 
+    let val = +document.querySelector('.i-4').value;
+    let out = document.querySelector('.out-4');
+
+    if (val >= 18){
+        out.innerHTML = 1;
+    } else if (val < 18){
+        out.innerHTML = 0;
+    } else {
+        out.innerHTML = '';
+    }
 }
 
 document.querySelector('.b-4').onclick = f4;
@@ -43,6 +80,19 @@ document.querySelector('.b-4').onclick = f4;
 // Task 5. Создайте на странице input[type=number] с классом i-5, куда пользователь может ввести число. Есть кнопка b-5 которая запускает функцию f5. Функция должна вывести в  .out-5 символ m если число меньше нуля, 0 если число равно нулю и 1 если больше.
 
 function f5(){
+
+    let val = +document.querySelector('.i-5').value;
+    let out = document.querySelector('.out-5');
+
+    if (val < 0){
+        out.innerHTML = 'm';
+    } else if (val == 0){
+        out.innerHTML = 0;
+    } else if (val > 0){
+        out.innerHTML = 1;
+    } else {
+        out.innerHTML = '';
+    }
 
 }
 
