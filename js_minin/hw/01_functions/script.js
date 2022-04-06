@@ -21,5 +21,5 @@ function checkAngLogAge(year, name, compareTo) {
   }
 }
 
-checkAngLogAge(carYear, 'машины', 2)
-checkAngLogAge(personYear, 'человека', 56)
+checkAngLogAge(carYear, 'машины', 8)
+checkAngLogAge(personYear, 'человека', 30)
