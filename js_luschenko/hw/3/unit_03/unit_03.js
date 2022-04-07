@@ -103,6 +103,16 @@ document.querySelector('.b-5').onclick = f5;
 
 function f6(){
 
+    let val = +document.querySelector('.i-6').value;
+    let out = document.querySelector('.out-6');
+    let result = val % 2;
+
+    if (result == 0) {
+        out.innerHTML = 'even';
+    } else {
+        out.innerHTML = 'odd';
+    } 
+
 }
 
 document.querySelector('.b-6').onclick = f6;
@@ -111,6 +121,12 @@ document.querySelector('.b-6').onclick = f6;
 // Даны 2 input - i-71 и i-72, оба - input[type=number]. При нажатии кнопки b-7 срабатывает функция f7. Функция должна число из i-71 возвести в степень i-72, вывести результат в  out-7. Для возведения в степень можно использовать **, или Math.pow.
 
 function f7(){
+    let valOne = +document.querySelector('.i-71').value;
+    let valTwo = +document.querySelector('.i-72').value;
+    let out = document.querySelector('.out-7');
+
+    // out.innerHTML = valOne ** valTwo; // exponentioation operator
+    out.innerHTML = Math.pow(valOne, valTwo); // static method
 
 }
 
@@ -120,6 +136,19 @@ document.querySelector('.b-7').onclick = f7;
 // Дан select s-8, который содержит 3 значения: 1, 2, 3. Дана кнопка b-8. При ее  нажатии срабатывает функция f8. Функция должна получить выбранное в select число, потом с помощью switch case сравнить его поочередно с ‘1’, ‘2’, ‘3’. И если число выбрано - 1, то вывести в out-8 строку one, если 2 - two, если 3 - three.
 
 function f8(){
+
+    let val = +document.querySelector('.s-8').value;
+    let out = document.querySelector('.out-8');
+
+    if (val == 1){
+        out.innerHTML = 'one';
+    } else if (val == 2){
+        out.innerHTML = 'two';
+    } else if (val == 3){
+        out.innerHTML = 'three';
+    } else {
+        out.innerHTML = '';
+    }
 
 }
 
@@ -134,6 +163,19 @@ document.querySelector('.b-8').onclick = f8;
 
 function f9(){
 
+    let val = +document.querySelector('.i-9').value;
+    let out = document.querySelector('.out-9');
+
+    if (val >= 1 && val <= 32){
+        out.innerHTML = 1;
+    } else if (val >= 33 && val <=43){
+        out.innerHTML = 2;
+    } else if (val >= 44 && val <= 64){
+        out.innerHTML = 3;
+    } else {
+        out.innerHTML = 0;
+    }
+
 }
 
 document.querySelector('.b-9').onclick = f9;
@@ -143,6 +185,10 @@ document.querySelector('.b-9').onclick = f9;
 
 function f10(){
 
+    let val = +document.querySelector('.s-100').value;
+    let out = document.querySelector('.out-10');
+
+    out.innerHTML = val;
 }
 
 document.querySelector('.b-10').onclick = f10;
@@ -151,6 +197,11 @@ document.querySelector('.b-10').onclick = f10;
 // Дан select s-110. По изменению состояния select (событие onchange) выведите value выбранного option в out-11.
 
 function f11(){
+
+    let val = +document.querySelector('.s-110').value;
+    let out = document.querySelector('.out-11');
+
+    out.innerHTML = val;
 
 }
 
@@ -174,6 +225,11 @@ document.querySelector('.b-12').onclick = f12;
 
 function f13(){
 
+    let val = document.querySelector('.i-130').value;
+    let out = document.querySelector('.out-13');
+
+    out.innerHTML = (typeof val);
+
 }
 
 document.querySelector('.b-13').onclick = f13;
@@ -184,6 +240,35 @@ document.querySelector('.b-13').onclick = f13;
 
 function f14(){
 
+    let valOne = +document.querySelector('.i-141').value;
+    let valTwo = +document.querySelector('.i-142').value;
+    let operation = document.querySelector('.s-143').value;
+    let out = document.querySelector('.out-14');
+
+    // if (operation == '+'){
+    //     out.innerHTML = valOne + valTwo;
+    // } else {
+    //     out.innerHTML = '';
+    // }
+
+    switch (operation){
+        case '+':
+            out.innerHTML = valOne + valTwo;
+            break;
+        case '-':
+            out.innerHTML = valOne - valTwo;
+            break;
+        case '*':
+            out.innerHTML = valOne * valTwo;
+            break;
+        case '/':
+            out.innerHTML = valOne / valTwo;
+            break;
+        default:
+            out.innerHTML = '';
+    }
+
+
 }
 
 document.querySelector('.b-14').onclick = f14;
@@ -193,6 +278,22 @@ document.querySelector('.b-14').onclick = f14;
 // Дан select s-151 и s-152, каждый из которых содержит 1 и 0.  Дан select s-153, который содержит две операции - && и || . Дана кнопка b-15, при нажатии на которую срабатывает функция f15. Функция выводит в out-15 результат логических операций выбранных в 3 select к числам выбранным в первом и втором select. Например выбрано 1 1 &&, нужно вывести результат операции 1&&1 т.е. 1 или 0.
 
 function f15(){
+
+    let valOne = +document.querySelector('.s-151').value;
+    let valTwo = +document.querySelector('.s-152').value;
+    let operation = document.querySelector('.s-153').value;
+    let out = document.querySelector('.out-15');
+
+    switch (operation){
+        case '&&':
+            out.innerHTML = valOne && valTwo;
+            break;
+        case '||':
+            out.innerHTML = valOne || valTwo;
+            break;
+        default:
+            out.innerHTML = '';
+    }
 
 }
 
