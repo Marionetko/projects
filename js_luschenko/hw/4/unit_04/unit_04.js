@@ -2,7 +2,7 @@
 // Создайте button.b-1 - при нажатии на него выводите alert с номером задачи. Номер задачи просто пропишите вручную.
 
 function f1() {
-
+    alert('Task 1');
 }
 
 document.querySelector('.b-1').onclick = f1;
@@ -12,7 +12,7 @@ document.querySelector('.b-1').onclick = f1;
 // Создайте input.b-2 type=button - при нажатии на него выводите alert с номером задачи. Номер задачи просто пропишите вручную.
 
 function f2() {
-
+    alert('Task 2');
 }
 
 document.querySelector('.b-2').onclick = f2;
@@ -22,7 +22,7 @@ document.querySelector('.b-2').onclick = f2;
 // Создайте p.p-3 - при нажатии на него выводите alert с номером задачи.
 
 function f3() {
-
+    alert('Task 3');
 }
 
 document.querySelector('.p-3').onclick = f3;
@@ -32,6 +32,15 @@ document.querySelector('.p-3').onclick = f3;
 
 function f4() {
 
+    let checkbox = document.querySelector('.i-4');
+    let out = document.querySelector('.out-4');
+
+    if (checkbox.checked) {
+        out.innerHTML = true;
+    } else {
+        out.innerHTML = false;
+    }
+
 }
 
 document.querySelector('.b-4').onclick = f4;
@@ -40,7 +49,14 @@ document.querySelector('.b-4').onclick = f4;
 //Создайте input(checkbox).i-5 и button.b-5. Для checkbox добавьте value="task-5" - при нажатии на кнопку b-5 выводите value checkbox если checkbox выбран и false если не выбран. Вывод везде в задачах, где не указано другое, осуществляется в div.out-номер задачи. В данном случае div.out-5
 
 function f5() {
+    let checkbox = document.querySelector('.i-5');
+    let out = document.querySelector('.out-5');
 
+    if (checkbox.checked) {
+        out.innerHTML = checkbox.value;
+    } else {
+        out.innerHTML = false;
+    }
 }
 
 document.querySelector('.b-5').onclick = f5;
@@ -50,7 +66,10 @@ document.querySelector('.b-5').onclick = f5;
 //Создайте input(hidden).i-6 и button.b-6 - при нажатии на кнопку выводите value из input в div.out-6
 
 function f6() {
+    let val = document.querySelector('.i-6').value;
+    let out = document.querySelector('.out-6');
 
+    out.innerHTML = val;
 }
 
 document.querySelector('.b-6').onclick = f6;
@@ -60,6 +79,12 @@ document.querySelector('.b-6').onclick = f6;
 
 function f7() {
 
+    // let val = document.querySelector('.i-7').value;
+    // let out1 = document.querySelector('.out-71');
+    // let out2 = document.querySelector('.out-72');
+
+    // out1.innerHTML = val;
+    // console.log(out1.lenght)
 }
 
 document.querySelector('.b-7').onclick = f7;
