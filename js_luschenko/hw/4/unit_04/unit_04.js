@@ -79,12 +79,19 @@ document.querySelector('.b-6').onclick = f6;
 
 function f7() {
 
-    // let val = document.querySelector('.i-7').value;
-    // let out1 = document.querySelector('.out-71');
-    // let out2 = document.querySelector('.out-72');
+    let valOne = document.querySelector('.i-7').value;
+    let valTwo = valOne.length;
+    let out1 = document.querySelector('.out-71');
+    let out2 = document.querySelector('.out-72');
 
-    // out1.innerHTML = val;
-    // console.log(out1.lenght)
+    if (valTwo >= 6){
+        out2.innerHTML = 1;
+    } else {
+        out2.innerHTML = 0;
+    }
+
+    out1.innerHTML = valOne;
+    console.log(valTwo)
 }
 
 document.querySelector('.b-7').onclick = f7;
@@ -92,16 +99,30 @@ document.querySelector('.b-7').onclick = f7;
 // Task 8.
 // Создайте div.out-8 и кнопку .b-8. При нажатии кнопки создавайте внутри div.out-8 элемент input.i-81 и кнопку .b-81 (innerHTML). Добавьте на созданную кнопку событие клик и запуск функции f81. Функция должна в .out-81 выводить value созданного input.i-81.
 
+
+
 function f8() {
     // кнопку создаем через ....innerHTML = '<button....</button>
     // т.е. как строку и в ставляем на страницу
     //  потом получаем кнопку со страницы и вешаем событие
     //    вашасозданнаякнопка.onclick = f81;
     //
+
+    let out = document.querySelector('.out-8');
+    let input = '<input type=text class="i-81">';
+    let btn = '<button class="button-primary b-81">Task-8.1</button>';
+
+    out.innerHTML = input + btn;
+    document.querySelector('.b-81').onclick = f81;
+
 }
 
 function f81 () {
 
+    let out = document.querySelector('.out-81');
+    let input = document.querySelector('.i-81').value;
+
+    out.innerHTML = input;
 }
 
 document.querySelector('.b-8').onclick = f8;
