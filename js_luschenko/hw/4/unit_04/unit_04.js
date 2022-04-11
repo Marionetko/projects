@@ -166,6 +166,10 @@ document.querySelector('.b-10').onclick = f10;
 
 function f11() {
 
+    let colorOne = document.querySelector('.i-111').value;
+
+    document.querySelector('.i-112').value = colorOne;
+
 }
 
 document.querySelector('.b-11').onclick = f11;
