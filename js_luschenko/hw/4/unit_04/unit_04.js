@@ -179,6 +179,11 @@ document.querySelector('.b-11').onclick = f11;
 
 function f12() {
 
+    let date = document.querySelector('.i-12').value;
+    let out = document.querySelector('.out-12');
+
+    out.innerHTML = date;
+
 }
 
 document.querySelector('.b-12').onclick = f12;
