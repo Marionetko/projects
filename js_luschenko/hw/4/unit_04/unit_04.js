@@ -277,6 +277,11 @@ document.querySelector('.s-18').onchange = f18;
 
 function f19() {
 
+    let input = document.querySelector('.i-191').value;
+    let inputPassword = document.querySelector('.i-192').value;
+    let out = document.querySelector('.out-19');
+
+    out.innerHTML = input + ' ' + inputPassword;
 }
 
 document.querySelector('.b-19').onclick = f19;
