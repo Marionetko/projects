@@ -263,6 +263,11 @@ document.querySelector('.s-17').onchange = f17;
 
 function f18() {
 
+    let s18 = document.querySelector('.s-18');
+    let input = document.querySelector('.i-18');
+
+    input.value = s18.value;
+
 }
 
 document.querySelector('.s-18').onchange = f18;
