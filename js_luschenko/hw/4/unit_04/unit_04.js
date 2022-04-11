@@ -297,6 +297,13 @@ function f20(e) {
     let form = document.querySelector('.f-20');
     console.log(form.elements);
     console.log(form.elements['username'].value); // так можно обратиться к элементу внутри формы
+    console.log(form.elements['password'].value);
+
+    let userName = form.elements['username'].value;
+    let password = form.elements['password'].value;
+    let out = document.querySelector('.out-20');
+
+    out.innerHTML = userName + ' ' + password;
 
 }
 
