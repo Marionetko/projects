@@ -132,6 +132,15 @@ document.querySelector('.b-8').onclick = f8;
 
 function f9() {
 
+    let radio = document.querySelector('.r-9');
+    let out = document.querySelector('.out-9');
+
+    if (radio.checked){
+        out.innerHTML = radio.value;
+    } else {
+        out.innerHTML = 0;
+    }
+
 }
 
 document.querySelector('.b-9').onclick = f9;
