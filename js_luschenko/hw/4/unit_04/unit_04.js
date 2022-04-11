@@ -220,6 +220,13 @@ document.querySelector('.b-14').onclick = f14;
 
 function f15() {
 
+    let text = document.querySelector('.t-15');
+    let input = document.querySelector('.i-15').value;
+    let out = document.querySelector('.out-15');
+
+    text.value = input;
+    out.innerHTML = input;
+
 }
 
 document.querySelector('.b-15').onclick = f15;
