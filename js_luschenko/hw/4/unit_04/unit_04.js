@@ -193,6 +193,11 @@ document.querySelector('.b-12').onclick = f12;
 
 function f13() {
 
+    let val = document.querySelector('.i-13').value;
+    let out = document.querySelector('.out-13');
+
+    out.innerHTML = val;
+
 }
 
 document.querySelector('.i-13').oninput = f13;
