@@ -237,6 +237,11 @@ document.querySelector('.b-15').onclick = f15;
 function f16() {
     // для получения выбранного option просто получите select в переменную и select.value;
 
+    let s16 = document.querySelector('.s-16').value;
+    let out = document.querySelector('.out-16');
+
+    out.innerHTML = s16;
+
 }
 
 document.querySelector('.b-16').onclick = f16;
@@ -245,7 +250,10 @@ document.querySelector('.b-16').onclick = f16;
 // Создайте select.s-17. Добавьте ему событие onchange, при наступлении которого запускается функция f17. Функция должна выводить в out-17 value выбранного в select option.
 
 function f17() {
+    let s17 = document.querySelector('.s-17').value;
+    let out = document.querySelector('.out-17');
 
+    out.innerHTML = s17;
 }
 
 document.querySelector('.s-17').onchange = f17;
