@@ -207,6 +207,10 @@ document.querySelector('.i-13').oninput = f13;
 
 function f14() {
 
+    let text = document.querySelector('.t-14').value;
+    let out = document.querySelector('.out-14');
+
+    out.innerHTML = text;
 }
 
 document.querySelector('.b-14').onclick = f14;
