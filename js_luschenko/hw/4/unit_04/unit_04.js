@@ -151,6 +151,11 @@ document.querySelector('.b-9').onclick = f9;
 
 function f10() {
 
+    let color = document.querySelector('.i-10');
+    let out = document.querySelector('.out-10');
+
+    out.style.background = color.value;
+
 }
 
 document.querySelector('.b-10').onclick = f10;
