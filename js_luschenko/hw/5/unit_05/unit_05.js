@@ -75,6 +75,18 @@ document.querySelector('.b-4').onclick = t4;
 
 function t5() {
 
+    let out = document.querySelector('.out-5');
+
+    for (let i = 1; i <= 17; i++){
+
+        if (i % 2){
+            out.innerHTML += i + '_*';
+        } else {
+            out.innerHTML += i + '_**';
+        }
+    }
+
+    
 }
 
 document.querySelector('.b-5').onclick = t5;
