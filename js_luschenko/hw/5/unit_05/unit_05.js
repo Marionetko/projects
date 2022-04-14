@@ -6,6 +6,11 @@
 
 function t1() {
 
+    let out = document.querySelector('.out-1');
+    
+    for (let i = 1; i <= 50; i++){
+        out.innerHTML += i + ' ';
+    }
 }
 
 document.querySelector('.b-1').onclick = t1;
@@ -17,6 +22,11 @@ document.querySelector('.b-1').onclick = t1;
 
 function t2() {
 
+    let out = document.querySelector('.out-2');
+
+    for (let i = 2; i <= 122; i = i + 2){
+        out.innerHTML += i + ' ';
+    }
 }
 
 document.querySelector('.b-2').onclick = t2;
