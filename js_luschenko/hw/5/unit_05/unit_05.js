@@ -104,6 +104,16 @@ document.querySelector('.b-5').onclick = t5;
 
 function t6() {
 
+    let out = document.querySelector('.out-6');
+    let val = +document.querySelector('.i-6').value;
+    out.innerHTML = '';
+    
+    for (let i = 0; i < val; i++){
+        out.innerHTML += '******' + '<br>';
+    }
+
+    
+
 }
 
 document.querySelector('.b-6').onclick = t6;
