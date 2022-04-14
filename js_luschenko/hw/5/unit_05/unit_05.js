@@ -39,6 +39,12 @@ document.querySelector('.b-2').onclick = t2;
 
 function t3() {
 
+    let out = document.querySelector('.out-3');
+
+    for (let i = 25; i >= 7; i = i - 1){
+        out.innerHTML += i + ' ';
+    }
+
 }
 
 document.querySelector('.b-3').onclick = t3;
@@ -50,6 +56,12 @@ document.querySelector('.b-3').onclick = t3;
 
 
 function t4() {
+
+    let out = document.querySelector('.out-4');
+
+    for (let i = 77; i >= 35; i = i - 3){
+        out.innerHTML += i + '_';
+    }
 
 }
 
