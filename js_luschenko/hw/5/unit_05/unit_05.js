@@ -107,12 +107,10 @@ function t6() {
     let out = document.querySelector('.out-6');
     let val = +document.querySelector('.i-6').value;
     out.innerHTML = '';
-    
+
     for (let i = 0; i < val; i++){
         out.innerHTML += '******' + '<br>';
     }
-
-    
 
 }
 
@@ -128,6 +126,12 @@ document.querySelector('.b-6').onclick = t6;
 
 function t7() {
 
+    let val = +document.querySelector('.i-7').value;
+    let out = document.querySelector('.out-7');
+
+    for (let i = val; i >= 0; i--){
+        out.innerHTML += i + ' ';
+    }
 }
 
 document.querySelector('.b-7').onclick = t7;
@@ -142,6 +146,14 @@ document.querySelector('.b-7').onclick = t7;
 // Задача решается с помощью цикла.
 
 function t8() {
+
+    let minValue = +document.querySelector('.i-81').value;
+    let maxValue = +document.querySelector('.i-82').value;
+    let out = document.querySelector('.out-8');
+
+    for (let i = minValue; i <= maxValue; i++){
+        out.innerHTML += i + ' ';
+    }
 
 }
 
