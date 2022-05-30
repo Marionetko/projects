@@ -172,6 +172,20 @@ document.querySelector('.b-8').onclick = t8;
 
 function t9() {
 
+    let firstVal = +document.querySelector('.i-91').value;
+    let secondVal = +document.querySelector('.i-92').value;
+    let out = document.querySelector('.out-9');
+    let result = ' ';
+
+    let min = Math.min(firstVal, secondVal);
+    let max = Math.max(firstVal, secondVal);
+
+    for(i = min; i <= max; i++) {
+        result += ' ' + i;
+    }
+
+    out.innerHTML = result;
+    
 }
 
 document.querySelector('.b-9').onclick = t9;
