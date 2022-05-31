@@ -197,6 +197,14 @@ document.querySelector('.b-9').onclick = t9;
 
 function t10() {
 
+    let out = document.querySelector('.out-10');
+
+    for (let i = 1950; i <= 2000; i++){
+
+        if(i % 2 == 0){
+            out.innerHTML += ' ' + i;
+        }
+    }
 }
 
 document.querySelector('.b-10').onclick = t10;
