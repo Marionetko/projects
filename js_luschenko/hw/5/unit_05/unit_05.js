@@ -220,6 +220,13 @@ document.querySelector('.b-10').onclick = t10;
 
 function t11() {
 
+    let div = document.getElementsByClassName('div-11');
+    let out = document.querySelector('.out-11');
+
+    for (let i = 0; i < div.length; i++){
+        out.innerHTML += div[i].innerHTML + ' ';
+    }
+
 }
 
 document.querySelector('.b-11').onclick = t11;
@@ -232,6 +239,12 @@ document.querySelector('.b-11').onclick = t11;
 
 
 function t12() {
+
+    let div = document.getElementsByClassName('div-12');
+
+    for(let i = 0; i < div.length; i++){
+        div[i].style.background = 'orange';
+    }
 
 }
 
@@ -269,6 +282,12 @@ document.querySelector('.b-14').onclick = t14;
 // Подсказка (10 - i) + ' ' + i
 
 function t15() {
+
+    let out = document.querySelector('.out-15');
+
+    for(let i = 0; i <= 10; i++){
+        out.innerHTML += (10 - i) + ' ' + i + ' ';
+    }
 
 }
 
