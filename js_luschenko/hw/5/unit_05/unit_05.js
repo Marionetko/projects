@@ -260,6 +260,9 @@ function t13() {
 
     let inputs = document.getElementsByClassName('i-13');
 
+    for(let i = 0; i < inputs.length; i++){
+        inputs[i].value = i + 1;
+    }
 
 }
 
