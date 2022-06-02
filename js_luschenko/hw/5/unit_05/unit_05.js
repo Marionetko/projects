@@ -258,6 +258,9 @@ document.querySelector('.b-12').onclick = t12;
 
 function t13() {
 
+    let inputs = document.getElementsByClassName('i-13');
+
+
 }
 
 document.querySelector('.b-13').onclick = t13;
@@ -270,6 +273,15 @@ document.querySelector('.b-13').onclick = t13;
 
 
 function t14() {
+
+    let radio = document.querySelectorAll('.i-14[type="radio"]');
+    let out = document.querySelector('.out-14');
+
+    for(let i = 0; i < radio.length; i++){
+        if (radio[i].checked){
+            out.innerHTML = radio[i].value;
+        }
+    }
 
 }
 
