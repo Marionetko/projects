@@ -8,18 +8,18 @@
 function t1() {
 
     let out = document.querySelector('.out-1');
-    let stars = '';
+    let sign = '';
     
     for(let i = 0; i < 3; i++){
 
-        for(let k= 0; k < 3; k++){
-            stars += '*'
+        for(let k = 0; k < 3; k++){
+            sign += '*'
         }
 
-        stars += '_';
+        sign += '_';
     }
 
-    out.innerHTML = `${stars}`;
+    out.innerHTML = `${sign}`;
 }
 
 document.querySelector('.b-1').onclick = t1;
@@ -36,6 +36,21 @@ document.querySelector('.b-1').onclick = t1;
 // </pre>
 // <p>Решить задачу с помощью вложенных циклов. Внешний цикл выводит цифры и перенос строки br, , второй звездочки, знак подчеркивания и знак переноса.</p>
 function t2() {
+
+    let out = document.querySelector('.out-2');
+    let result = '';
+
+    for(let i = 1; i <= 3; i++){
+
+        result += `${i}<br>`;
+
+        for(let k = 0; k < 1; k++){
+            result += `*_*_*_<br>`;
+        }
+        
+    }
+
+    out.innerHTML = result;
 
 }
 
