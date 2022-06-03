@@ -7,6 +7,19 @@
 
 function t1() {
 
+    let out = document.querySelector('.out-1');
+    let stars = '';
+    
+    for(let i = 0; i < 3; i++){
+
+        for(let k= 0; k < 3; k++){
+            stars += '*'
+        }
+
+        stars += '_';
+    }
+
+    out.innerHTML = `${stars}`;
 }
 
 document.querySelector('.b-1').onclick = t1;
