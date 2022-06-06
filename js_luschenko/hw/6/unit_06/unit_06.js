@@ -94,6 +94,22 @@ document.querySelector('.b-3').onclick = t3;
 // </pre>
 function t4() {
 
+    let out = document.querySelector('.out-4');
+    let result = '';
+
+    for(let i = 1; i <= 3; i++){
+
+        result += `${i}_`;
+
+        for(let k = 1; k <= 5; k++){
+
+            result += `${k} `;
+
+        }
+    }
+
+    out.innerHTML = result;
+
 }
 
 document.querySelector('.b-4').onclick = t4;
