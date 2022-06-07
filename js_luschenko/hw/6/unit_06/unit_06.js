@@ -298,16 +298,15 @@ function t10() {
     let out = document.querySelector('.out-10');
     let result = '';
 
-    for(let i = 0; i < 6; i++){
+    for(let i = 0; i < 5; i++){
 
         result += '<br>';
 
-        for(let k = 0; k <= 9; k++){
-            result += `${k} `;
+        for(let k = 1; k <= 10; k++){
+
+            let start = i * 10;
+            result += k < 10 && i == 0 ? `0${k} ` : `${+start + k} `;
         }
-
-        
-
     }
 
     out.innerHTML = result;
