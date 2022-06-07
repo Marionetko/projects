@@ -161,6 +161,27 @@ document.querySelector('.b-5').onclick = t5;
 // <p>Внешний цикл выводит перенос строки br. Вложенный цикл от 0 до 6 выводит либо 0 либо 1 либо х.</p>
 function t6() {
 
+    let out = document.querySelector('.out-6');
+    let result = '';
+    
+    for(let i = 0; i < 3; i++){
+
+        result +='<br>';
+
+        for(let k = 0; k < 6; k++){
+
+            if(k == 2 || k == 5){
+                result += 'x';
+            } else if((k % 2 == 0)){
+                result += 1;
+            } else {
+                result += 0;
+            }
+        }
+
+        out.innerHTML = result;
+    }
+
 }
 
 document.querySelector('.b-6').onclick = t6;
