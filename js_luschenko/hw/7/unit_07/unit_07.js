@@ -27,6 +27,8 @@ document.querySelector('.b-2').onclick = function () {
 
 function t3(a, b) {
 
+    return a * b;
+
 }
 
 document.querySelector('.b-3-1').onclick = function () {
