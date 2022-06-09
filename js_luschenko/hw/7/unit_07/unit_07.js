@@ -55,11 +55,11 @@ document.querySelector('.b-4').onclick = function () {
 
 
 function t5(yourName) {
-
+    return `Hello ${yourName}`;
 }
 
 document.querySelector('.b-5').onclick = function () {
-    document.querySelector('.out-5').textContent = t5('Alex');
+    document.querySelector('.out-5').textContent = t5('Tony');
 }
 
 
