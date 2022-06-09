@@ -42,11 +42,12 @@ document.querySelector('.b-3-2').onclick = function () {
 // Напишите функцию t4 которая принимает ваш год рождения  и вычисляет ваш возраст. 
 
 function t4(year) {
-
+    let now = 2022;
+    return now - year;
 }
 
 document.querySelector('.b-4').onclick = function () {
-    document.querySelector('.out-4').textContent = t4(1983);
+    document.querySelector('.out-4').textContent = t4(1989);
 }
 
 
