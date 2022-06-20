@@ -69,6 +69,8 @@ document.querySelector('.b-5').onclick = function () {
 
 function t6(a, b) {
 
+    return Math.floor(Math.random() * (b - a + 1)) + a; 
+
 }
 
 document.querySelector('.b-6').onclick = function () {
