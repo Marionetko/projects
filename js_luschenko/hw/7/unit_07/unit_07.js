@@ -109,10 +109,16 @@ document.querySelector('.b-8').onclick = function () {
 
 function t9(num) {
 
+    if (num % 2 == 0){
+        return true;
+    } else {
+        return false;
+    }
+
 }
 
 document.querySelector('.b-9').onclick = function () {
-    document.querySelector('.out-9').textContent = t9(15);
+    document.querySelector('.out-9').textContent = t9(14);
 }
 
 
@@ -120,6 +126,8 @@ document.querySelector('.b-9').onclick = function () {
 // Создайте функцию t10, которая принимает 2 числа и возвращает большее из них.В случае равенства - любое из чисел.
 
 function t10(a, b) {
+
+    return Math.max(a, b);
 
 }
 
