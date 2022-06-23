@@ -216,6 +216,16 @@ document.querySelector('.b-9').onclick = t9;
 
 function t10() {
 
+    let minYear = 1950;
+    let maxYear = 2000;
+
+    while (minYear <= maxYear) {
+        if (minYear % 2 == 0) {
+            document.querySelector('.out-10').innerHTML += `${minYear} `;
+        }
+        minYear++;
+    }
+
 }
 
 document.querySelector('.b-10').onclick = t10;
