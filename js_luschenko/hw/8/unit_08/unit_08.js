@@ -9,7 +9,7 @@ function t1() {
 
     while (num < 50) {
         num++;
-        document.querySelector('.out-1').innerHTML += num + ' ';
+        document.querySelector('.out-1').innerHTML += `${num} `;
     }
 }
 
@@ -21,6 +21,16 @@ document.querySelector('.b-1').onclick = t1;
 // от 2 до 122 c шагом 2. Разделитель - пробел. Задача решается с помощью цикла  while.
 
 function t2() {
+
+    let num = 0;
+
+    while (num < 122) {
+        num++;
+
+        if (num % 2 == 0) {
+            document.querySelector('.out-2').innerHTML += `${num} `;
+        }
+    }
 
 }
 
@@ -34,6 +44,14 @@ document.querySelector('.b-2').onclick = t2;
 
 function t3() {
 
+    let num = 25;
+
+    while (num >= 7) {
+
+        document.querySelector('.out-3').innerHTML += `${num} `;
+        num--;
+    }
+
 }
 
 document.querySelector('.b-3').onclick = t3;
@@ -45,6 +63,15 @@ document.querySelector('.b-3').onclick = t3;
 
 
 function t4() {
+
+    let num = 77;
+
+    while (num >= 35) {
+
+        document.querySelector('.out-4').innerHTML += `${num}_`;
+        num = num - 3;
+
+    }
 
 }
 
