@@ -85,6 +85,20 @@ document.querySelector('.b-4').onclick = t4;
 
 function t5() {
 
+    let num = 0;
+
+    while (num < 17) {
+
+        num++;
+
+        if (num % 2 == 0) {
+            document.querySelector('.out-5').innerHTML += `${num}_**`
+        } else {
+            document.querySelector('.out-5').innerHTML += `${num}_*`
+        }
+
+    }
+
 }
 
 document.querySelector('.b-5').onclick = t5;
