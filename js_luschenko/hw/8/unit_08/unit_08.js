@@ -114,6 +114,13 @@ document.querySelector('.b-5').onclick = t5;
 
 function t6() {
 
+    let input = +document.querySelector('.i-6').value;
+
+    while (input > 0) {
+        document.querySelector('.out-6').innerHTML += `******<br>`;
+        input--;
+    }
+
 }
 
 document.querySelector('.b-6').onclick = t6;
