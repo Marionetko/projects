@@ -135,6 +135,13 @@ document.querySelector('.b-6').onclick = t6;
 
 function t7() {
 
+    let input = +document.querySelector('.i-7').value;
+
+    while (input >= 0) {
+        document.querySelector('.out-7').innerHTML += `${input} `;
+        input--;
+    }
+
 }
 
 document.querySelector('.b-7').onclick = t7;
