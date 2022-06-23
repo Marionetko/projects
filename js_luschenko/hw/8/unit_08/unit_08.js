@@ -157,6 +157,14 @@ document.querySelector('.b-7').onclick = t7;
 
 function t8() {
 
+    let valOne = +document.querySelector('.i-81').value;
+    let valTwo = +document.querySelector('.i-82').value;
+
+    while (valOne <= valTwo) {
+        document.querySelector('.out-8').innerHTML += `${valOne} `;
+        valOne++;
+    }
+
 }
 
 document.querySelector('.b-8').onclick = t8;
