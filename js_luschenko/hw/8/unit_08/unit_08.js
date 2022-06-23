@@ -181,6 +181,22 @@ document.querySelector('.b-8').onclick = t8;
 
 function t9() {
 
+    let valOne = +document.querySelector('.i-91').value;
+    let valTwo = +document.querySelector('.i-92').value;
+
+    if (valOne > valTwo) {
+
+        while (valOne >= valTwo) {
+            document.querySelector('.out-9').innerHTML += `${valTwo} `;
+            valTwo++;
+        }
+    } else {
+
+        while (valOne <= valTwo) {
+            document.querySelector('.out-9').innerHTML += `${valOne} `;
+            valOne++;
+        }
+    }
 }
 
 document.querySelector('.b-9').onclick = t9;
