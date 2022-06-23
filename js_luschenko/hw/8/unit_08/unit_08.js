@@ -184,19 +184,27 @@ function t9() {
     let valOne = +document.querySelector('.i-91').value;
     let valTwo = +document.querySelector('.i-92').value;
 
-    if (valOne > valTwo) {
+    let minNum = Math.min(valOne, valTwo);
+    let maxNum = Math.max(valOne, valTwo)
 
-        while (valOne >= valTwo) {
-            document.querySelector('.out-9').innerHTML += `${valTwo} `;
-            valTwo++;
-        }
-    } else {
-
-        while (valOne <= valTwo) {
-            document.querySelector('.out-9').innerHTML += `${valOne} `;
-            valOne++;
-        }
+    while (minNum <= maxNum) {
+        document.querySelector('.out-9').innerHTML += `${minNum} `;
+        minNum++;
     }
+
+    // if (valOne > valTwo) {
+
+    //     while (valOne >= valTwo) {
+    //         document.querySelector('.out-9').innerHTML += `${valTwo} `;
+    //         valTwo++;
+    //     }
+    // } else {
+
+    //     while (valOne <= valTwo) {
+    //         document.querySelector('.out-9').innerHTML += `${valOne} `;
+    //         valOne++;
+    //     }
+    // }
 }
 
 document.querySelector('.b-9').onclick = t9;
