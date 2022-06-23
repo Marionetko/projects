@@ -5,7 +5,12 @@
 
 
 function t1() {
+    let num = 0;
 
+    while (num < 50) {
+        num++;
+        document.querySelector('.out-1').innerHTML += num + ' ';
+    }
 }
 
 document.querySelector('.b-1').onclick = t1;
