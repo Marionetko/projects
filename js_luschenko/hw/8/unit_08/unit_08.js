@@ -241,6 +241,17 @@ document.querySelector('.b-10').onclick = t10;
 
 function t11() {
 
+    let div = document.querySelectorAll('.div-11');
+    let a = '';
+    let i = 0;
+
+    while (i < div.length) {
+        a += `${div[i].innerHTML} `;
+        i++
+    }
+
+    document.querySelector('.out-11').innerHTML = a;
+
 }
 
 document.querySelector('.b-11').onclick = t11;
