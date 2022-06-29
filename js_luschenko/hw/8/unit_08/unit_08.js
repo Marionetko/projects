@@ -331,6 +331,20 @@ document.querySelector('.b-14').onclick = t14;
 
 function t15() {
 
+    let i = 10;
+    let k = 0;
+
+    while (i >= 0) {
+        document.querySelector('.out-15').innerHTML += `${i} `;
+        i--;
+
+        while (k <= 10) {
+            document.querySelector('.out-15').innerHTML += `${k} `;
+            k++;
+            break;
+        }
+    }
+
 }
 
 document.querySelector('.b-15').onclick = t15;
