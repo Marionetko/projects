@@ -308,6 +308,18 @@ document.querySelector('.b-13').onclick = t13;
 
 function t14() {
 
+    let input = document.querySelectorAll('.i-14');
+    let i = 0;
+
+    while (i < input.length) {
+
+        if (input[i].checked) {
+            document.querySelector('.out-14').innerHTML = input[i].value;
+        }
+
+        i++;
+    }
+
 }
 
 document.querySelector('.b-14').onclick = t14;
