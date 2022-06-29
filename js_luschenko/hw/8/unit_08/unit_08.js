@@ -265,6 +265,16 @@ document.querySelector('.b-11').onclick = t11;
 
 function t12() {
 
+    let div = document.querySelectorAll('.div-12');
+    let str = '';
+    let i = 0;
+
+    while (i < div.length) {
+        str += `${div[i].style.background = 'orange'}`;
+        i++;
+    }
+
+
 }
 
 document.querySelector('.b-12').onclick = t12;
