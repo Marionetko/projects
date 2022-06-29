@@ -287,6 +287,14 @@ document.querySelector('.b-12').onclick = t12;
 
 function t13() {
 
+    let input = document.querySelectorAll('.i-13');
+    let i = 0;
+
+    while (i < input.length) {
+        input[i].value = i + 1;
+        i++;
+    }
+
 }
 
 document.querySelector('.b-13').onclick = t13;
