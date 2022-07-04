@@ -106,6 +106,9 @@ let blocks8 = document.querySelectorAll('.out-8');
 
 function f8() {
     //внутри цикла blocks8[i].classList....
+    for (let i = 0; i < blocks8.length; i++) {
+        blocks8[i].classList.toggle('bg-8');
+    }
 }
 
 document.querySelector('.b-8').onclick = f8;
