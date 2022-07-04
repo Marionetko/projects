@@ -74,6 +74,10 @@ document.querySelector('.b-5').onclick = f5;
 
 function f6() {
 
+    let out = document.querySelector('.out-6');
+    let paragraph = document.querySelectorAll('.p-6').length;
+    out.innerHTML += paragraph;
+
 }
 
 document.querySelector('.b-6').onclick = f6;
