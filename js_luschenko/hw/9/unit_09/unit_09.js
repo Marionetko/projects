@@ -55,6 +55,15 @@ document.querySelector('.b-4').onclick = f4;
 
 function f5() {
 
+    let out = document.querySelector('.out-5');
+    let out4 = document.querySelector('.out-4');
+
+    if (out4.classList.contains('bg-4')) {
+        out.innerHTML = true;
+    } else {
+        out.innerHTML = false;
+    }
+
 }
 
 document.querySelector('.b-5').onclick = f5;
