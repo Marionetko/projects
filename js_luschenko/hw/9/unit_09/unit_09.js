@@ -294,6 +294,8 @@ document.querySelector('.b-19').onclick = f19;
 
 function f20() {
 
+    document.querySelector('.out-20').setAttribute('title', 'go');
+
 }
 
 document.querySelector('.b-20').onclick = f20;
