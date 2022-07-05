@@ -205,6 +205,12 @@ document.querySelector('.b-13').onclick = f13;
 
 function f14() {
 
+    let newDiv = document.createElement('div');
+    newDiv.innerText = '14';
+    newDiv.classList.add('bg-14');
+
+    document.querySelector('.out-14').prepend(newDiv);
+
 }
 
 document.querySelector('.b-14').onclick = f14;
