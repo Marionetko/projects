@@ -153,6 +153,11 @@ for (let i = 0; i < div10.length; i++) {
 
 function f11() {
 
+    let newDiv = document.createElement('div');
+    newDiv.innerText = '25';
+
+    document.querySelector('.out-11').append(newDiv);
+
 }
 
 document.querySelector('.b-11').onclick = f11;
