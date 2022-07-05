@@ -278,6 +278,13 @@ document.querySelector('.b-18').onclick = f18;
 
 function f19() {
 
+    let p19 = document.querySelectorAll('.p-19');
+
+    for (let i = 0; i < p19.length; i++) {
+        let data = p19[i].getAttribute('data-b');
+        document.querySelector('.out-19').innerHTML += `${data} `
+    }
+
 }
 
 document.querySelector('.b-19').onclick = f19;
