@@ -168,6 +168,12 @@ document.querySelector('.b-11').onclick = f11;
 
 function f12() {
 
+    let newDiv = document.createElement('div');
+    newDiv.innerHTML = '12';
+    newDiv.classList.add('bg-12');
+
+    document.querySelector('.out-12').append(newDiv);
+
 }
 
 document.querySelector('.b-12').onclick = f12;
