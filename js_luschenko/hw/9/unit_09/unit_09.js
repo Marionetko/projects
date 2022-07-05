@@ -265,6 +265,10 @@ document.querySelector('.b-17').onclick = f17;
 
 function f18() {
 
+    let data = document.querySelector('.p-18').getAttribute('data-b');
+
+    document.querySelector('.out-18').innerHTML = data;
+
 }
 
 document.querySelector('.b-18').onclick = f18;
