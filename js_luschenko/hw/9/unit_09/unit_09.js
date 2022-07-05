@@ -169,7 +169,7 @@ document.querySelector('.b-11').onclick = f11;
 function f12() {
 
     let newDiv = document.createElement('div');
-    newDiv.innerHTML = '12';
+    newDiv.innerText = '12';
     newDiv.classList.add('bg-12');
 
     document.querySelector('.out-12').append(newDiv);
@@ -183,6 +183,13 @@ document.querySelector('.b-12').onclick = f12;
 
 function f13() {
 
+    let newDiv = document.createElement('div');
+    newDiv.innerText = 'pushMe';
+    newDiv.classList.add('bg-13');
+
+    document.querySelector('.out-13').append(newDiv);
+
+    newDiv.onclick = f13_1;
 }
 
 function f13_1() {
