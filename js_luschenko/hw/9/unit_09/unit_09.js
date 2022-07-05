@@ -235,6 +235,12 @@ document.querySelector('.b-15').onclick = f15;
 
 function f16() {
 
+    const newDiv = document.createElement('div');
+    newDiv.innerText = '16';
+    newDiv.classList.add('bg-16');
+
+    document.querySelector('.out-16').after(newDiv);
+
 }
 
 document.querySelector('.b-16').onclick = f16;
