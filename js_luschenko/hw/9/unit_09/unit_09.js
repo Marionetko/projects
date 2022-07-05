@@ -250,6 +250,12 @@ document.querySelector('.b-16').onclick = f16;
 
 function f17() {
 
+    const newDiv = document.createElement('div');
+    newDiv.innerText = '17';
+    newDiv.classList.add('bg-17');
+
+    document.querySelector('.out-17').replaceWith(newDiv);
+
 }
 
 document.querySelector('.b-17').onclick = f17;
