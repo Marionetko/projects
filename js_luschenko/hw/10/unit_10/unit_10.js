@@ -15,10 +15,12 @@ document.querySelector('.b-1').onclick = f1;
 let ar2 = [1, 342, 15, true, 'Go Go go!', 96, false, '2478']; // переменную обьявляем здесь!!!!
 
 function f2() {
+
     let out = '';
     for (let i = 0; i < ar2.length; i++) {
         out += ar2[i] + ' ';
     }
+
     document.querySelector('.out-2').innerHTML = out;
 }
 
@@ -30,10 +32,14 @@ document.querySelector('.b-2').onclick = f2;
 // Вывод в out-3
 // Тест допустим массив [1,2,3] вывод - 3
 
-let ar3 = [1, 2, 3, 4, true]; // переменную обьявляем здесь!!!!
+let ar3 = [1, 2, 3]; // переменную обьявляем здесь!!!!
 
 function f3() {
-    document.querySelector('.out-3').innerHTML = ar3.length;
+    let out = '';
+
+    out = ar3.length;
+
+    document.querySelector('.out-3').innerHTML = out;
 }
 
 document.querySelector('.b-3').onclick = f3;
@@ -48,7 +54,12 @@ document.querySelector('.b-3').onclick = f3;
 let ar4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // переменную обьявляем эту здесь!!!!
 
 function f4() {
-    document.querySelector('.out-4').innerHTML = `${ar4[0]} ${ar4[3]} ${ar4[8]}`;
+
+    let out = '';
+
+    out = `${ar4[0]} ${ar4[3]} ${ar4[8]}`;
+
+    document.querySelector('.out-4').innerHTML = out;
 }
 
 document.querySelector('.b-4').onclick = f4;
@@ -103,6 +114,9 @@ document.querySelector('.b-6').onclick = f6;
 let ar7 = ['china', 'india', 'brazil', 'japan', 'egypt'];
 
 function f7() {
+
+    ar7
+
 }
 
 document.querySelector('.b-7').onclick = f7;
