@@ -78,9 +78,18 @@ document.querySelector('.b-5').onclick = f5;
 // Вывод - по нажатию кнопки b-6
 // Вывод в out-6
 
-// let ar6 =
+let ar6 = ['Tony', 'Scorpio', 8, 11,];
 
 function f6() {
+
+    let out = '';
+
+    for (let i = 0; i < ar6.length; i++) {
+        out += `${ar6[i]} `;
+    }
+
+    document.querySelector('.out-6').innerHTML = out;
+
 }
 
 document.querySelector('.b-6').onclick = f6;
