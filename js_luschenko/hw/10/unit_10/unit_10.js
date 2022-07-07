@@ -1,7 +1,7 @@
 // Task 1
 //Создайте массив ar1 содержащий строки, числа, булевы значения. Выведите его в .out-1. Вывод - по нажатию кнопки b-1
 
-let ar1 = [1, 342, 15, true, 'Go Go go!', 96, false, '2478']
+let ar1 = [1, 342, 15, true, 'Go Go go!', 96, false, '2478']; // переменную обьявляем здесь!!!!
 
 function f1() {
     document.querySelector('.out-1').innerHTML = ar1; // да так можно выводить!!!!
@@ -12,14 +12,14 @@ document.querySelector('.b-1').onclick = f1;
 // Task 2
 //Создайте массив ar2 содержащий строки, числа, булевы значения. Выведите его в div.out-2. Используйте шаблон вывода из кода в JS. Вывод - по нажатию кнопки b-2
 
-// let ar2 = // переменную обьявляем здесь!!!!
+let ar2 = [1, 342, 15, true, 'Go Go go!', 96, false, '2478']; // переменную обьявляем здесь!!!!
 
 function f2() {
-    // let out = '';
-    // for (let i = 0; i < ar2.length; i++) {
-    //     out +=arr2[i]+' ';
-    // }
-    // document.querySelector('.out-2').innerHTML = out;
+    let out = '';
+    for (let i = 0; i < ar2.length; i++) {
+        out += ar2[i] + ' ';
+    }
+    document.querySelector('.out-2').innerHTML = out;
 }
 
 document.querySelector('.b-2').onclick = f2;
