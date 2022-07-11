@@ -288,6 +288,13 @@ let ar14 = [1, 2, 3, 'hello', 66];
 
 function f14() {
 
+    let out = '';
+
+    for (let i = 0; i < ar14.length; i++) {
+        out += `${ar14[ar14.length - 1 - i]} `;
+    }
+
+    document.querySelector('.out-14').innerHTML = out + ' ';
 }
 
 document.querySelector('.b-14').onclick = f14;
