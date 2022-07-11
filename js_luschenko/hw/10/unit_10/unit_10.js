@@ -235,6 +235,19 @@ let ar12 = ['test', 'west', 'list', 'class', 'best'];
 
 function f12() {
 
+    let out = '';
+    let num = '';
+
+    num = ar12[0];
+    ar12[0] = ar12[ar12.length - 1];
+    ar12[ar12.length - 1] = num;
+
+    for (let i = 0; i < ar12.length; i++) {
+        out += `${ar12[i]} `
+    }
+
+    document.querySelector('.out-12').innerHTML = out;
+
 }
 
 document.querySelector('.b-12').onclick = f12;
