@@ -421,6 +421,14 @@ let ar20 = [4, 5, 6, 7, 8, 9, 10];
 
 function f20() {
 
+    let sum = 0;
+
+    for (let i = 0; i < ar20.length; i++) {
+        sum = sum + ar20[i];
+    }
+
+    document.querySelector('.out-20').innerHTML = sum
+
 }
 
 document.querySelector('.b-20').onclick = f20;
