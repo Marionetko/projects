@@ -335,6 +335,21 @@ let ar16_even = [];
 
 function f16() {
 
+    let out_odd = '';
+    let out_even = '';
+
+    for (i = 0; i < ar16.length; i++) {
+        if (ar16[i] % 2 == 0) {
+            ar16_even[i] = ar16[i];
+            out_even += `${ar16_even[i]} `;
+        } else if (ar16[i] % 2 !== 0) {
+            ar16_odd[i] = ar16[i];
+            out_odd += `${ar16_odd[i]} `;
+        }
+    }
+
+    document.querySelector('.out-16-odd').innerHTML = out_odd;
+    document.querySelector('.out-16-even').innerHTML = out_even;
 }
 
 document.querySelector('.b-16').onclick = f16;
