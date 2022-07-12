@@ -335,21 +335,10 @@ let ar16_even = [];
 
 function f16() {
 
-    let out_odd = '';
-    let out_even = '';
+    ar16.forEach(i => [ar16_even, ar16_odd][i % 2 ? 1 : 0].push(i));
 
-    for (i = 0; i < ar16.length; i++) {
-        if (ar16[i] % 2 == 0) {
-            ar16_even[i] = ar16[i];
-            out_even += `${ar16_even[i]} `;
-        } else if (ar16[i] % 2 !== 0) {
-            ar16_odd[i] = ar16[i];
-            out_odd += `${ar16_odd[i]} `;
-        }
-    }
-
-    document.querySelector('.out-16-odd').innerHTML = out_odd;
-    document.querySelector('.out-16-even').innerHTML = out_even;
+    document.querySelector('.out-16-even').textContent = ar16_even.join(' ');
+    document.querySelector('.out-16-odd').textContent = ar16_odd.join(' ');
 }
 
 document.querySelector('.b-16').onclick = f16;
@@ -363,6 +352,13 @@ document.querySelector('.b-16').onclick = f16;
 let ar17 = [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0];
 
 function f17() {
+
+    let out = '';
+    let count = '';
+
+    for (let i = 0; i < ar17.length; i++) {
+
+    }
 
 }
 
