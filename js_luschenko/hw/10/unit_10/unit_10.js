@@ -353,11 +353,14 @@ let ar17 = [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0];
 
 function f17() {
 
-    let out = '';
-    let count = '';
+    let count = 0;
 
     for (let i = 0; i < ar17.length; i++) {
+        if (ar17[i] > 3) {
+            count++;
+        }
 
+        document.querySelector('.out-17').innerHTML = count;
     }
 
 }
