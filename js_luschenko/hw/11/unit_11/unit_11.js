@@ -12,9 +12,9 @@ function showArr(domElem, arr) {
 let d1 = [33, 'best', 66, 'best'];
 
 function f1() {
-    /**
-     * ваш код здесь
-     */
+    let inputValue = document.querySelector('.i-1').value;
+    d1.push(inputValue);
+
     showArr('.out-1', d1);
 }
 
