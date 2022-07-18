@@ -112,6 +112,17 @@ let d8 = [2, '4', 12, 67, 'hello'];
 
 function f8() {
 
+    let input = document.querySelector(".i-8");
+    let t8 = [];
+
+    t8[0] = input.value;
+
+    for (let i = 0; i < d8.length; i++) {
+        t8[t8.length] = d8[i];
+    }
+
+    d8 = t8;
+
     showArr('.out-8', d8);
 }
 
