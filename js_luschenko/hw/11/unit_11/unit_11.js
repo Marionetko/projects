@@ -94,6 +94,9 @@ let d7 = ['china', 'india', 'brazil', 'japan', 'egypt'];
 
 function f7() {
 
+    const lastEl = d7[d7.length - 1];
+    d7.length = d7.length - 1;
+
     showArr('.out-7', d7);
 }
 
