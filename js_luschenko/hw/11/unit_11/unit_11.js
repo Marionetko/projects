@@ -77,6 +77,8 @@ let d6 = ['test', 5, 12];
 
 function f6() {
 
+    d6 = [...d6, document.querySelector('.i-6').value]
+
     showArr('.out-6', d6);
 }
 
