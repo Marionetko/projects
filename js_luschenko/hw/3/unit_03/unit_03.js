@@ -63,15 +63,16 @@ document.querySelector('.b-3').onclick = f3;
 
 function f4(){
 
-    let val = +document.querySelector('.i-4').value;
+    let yearOfBirth = +document.querySelector('.i-4').value;
+    let currentYear = new Date().getFullYear();
+    let age = currentYear - yearOfBirth;
+
     let out = document.querySelector('.out-4');
 
-    if (val >= 18){
+    if (age >= 18){
         out.innerHTML = 1;
-    } else if (val < 18){
-        out.innerHTML = 0;
     } else {
-        out.innerHTML = '';
+        out.innerHTML = 0;
     }
 }
 
@@ -86,12 +87,10 @@ function f5(){
 
     if (val < 0){
         out.innerHTML = 'm';
-    } else if (val == 0){
+    } else if (val === 0){
         out.innerHTML = 0;
-    } else if (val > 0){
-        out.innerHTML = 1;
     } else {
-        out.innerHTML = '';
+        out.innerHTML = 1;
     }
 
 }
@@ -105,9 +104,8 @@ function f6(){
 
     let val = +document.querySelector('.i-6').value;
     let out = document.querySelector('.out-6');
-    let result = val % 2;
 
-    if (result == 0) {
+    if (val % 2 === 0) {
         out.innerHTML = 'even';
     } else {
         out.innerHTML = 'odd';
@@ -140,16 +138,20 @@ function f8(){
     let val = +document.querySelector('.s-8').value;
     let out = document.querySelector('.out-8');
 
-    if (val == 1){
-        out.innerHTML = 'one';
-    } else if (val == 2){
-        out.innerHTML = 'two';
-    } else if (val == 3){
-        out.innerHTML = 'three';
-    } else {
-        out.innerHTML = '';
+    switch (val) {
+        case 1:
+            out.innerHTML = 'one';
+            break;
+        case 2:
+            out.innerHTML = 'two';
+            break;
+        case 3:
+            out.innerHTML = 'three';
+            break;
+        default:
+            out.innerHTML = '';
+            break;
     }
-
 }
 
 document.querySelector('.b-8').onclick = f8;
@@ -244,12 +246,6 @@ function f14(){
     let valTwo = +document.querySelector('.i-142').value;
     let operation = document.querySelector('.s-143').value;
     let out = document.querySelector('.out-14');
-
-    // if (operation == '+'){
-    //     out.innerHTML = valOne + valTwo;
-    // } else {
-    //     out.innerHTML = '';
-    // }
 
     switch (operation){
         case '+':
