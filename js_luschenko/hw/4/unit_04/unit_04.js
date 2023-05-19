@@ -79,19 +79,17 @@ document.querySelector('.b-6').onclick = f6;
 
 function f7() {
 
-    let valOne = document.querySelector('.i-7').value;
-    let valTwo = valOne.length;
-    let out1 = document.querySelector('.out-71');
-    let out2 = document.querySelector('.out-72');
+    let input = document.querySelector('.i-7');
+    let output1 = document.querySelector('.out-71');
+    let output2 = document.querySelector('.out-72');
 
-    if (valTwo >= 6){
-        out2.innerHTML = 1;
+    output1.textContent = input.value;
+
+    if (input.value.length >= 6) {
+        output2.textContent = '1';
     } else {
-        out2.innerHTML = 0;
+        output2.textContent = '0';
     }
-
-    out1.innerHTML = valOne;
-    console.log(valTwo)
 }
 
 document.querySelector('.b-7').onclick = f7;
@@ -166,10 +164,10 @@ document.querySelector('.b-10').onclick = f10;
 
 function f11() {
 
-    let colorOne = document.querySelector('.i-111').value;
+    let color = document.querySelector('.i-111').value;
 
-    document.querySelector('.i-112').value = colorOne;
-
+    document.querySelector('.i-112').value = color;
+    
 }
 
 document.querySelector('.b-11').onclick = f11;
